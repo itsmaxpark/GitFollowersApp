@@ -7,7 +7,22 @@
 
 import Foundation
 
+protocol GFRepoItemInfoViewControllerDelegate: AnyObject {
+    func didTapGitHubProfile(for user: User)
+}
+
 class GFRepoItemViewController: GFItemInfoViewController {
+    
+    weak var delegate: GFRepoItemInfoViewControllerDelegate!
+    
+    init(user: User, delegate: GFRepoItemInfoViewControllerDelegate) {
+        super.init(user: user)
+        self.delegate = delegate
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +32,7 @@ class GFRepoItemViewController: GFItemInfoViewController {
     private func configureItems() {
         itemInfoViewOne.set(itemInfoType: .repos, with: user.publicRepos)
         itemInfoViewTwo.set(itemInfoType: .gists, with: user.publicGists)
-        actionButton.set(backgroundColor: .systemPurple, title: "Github Profile")
+        actionButton.set(color: .systemPurple, title: "Github Profile", systemImageName: "person")
     }
     
     override func actionButtonTapped() {

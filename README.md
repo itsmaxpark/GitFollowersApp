@@ -1,5 +1,6 @@
 
-# Git Followers (from Sean Allen's Take Home Project)
+#Git Followers 
+(from Sean Allen's Take Home Project)
 
 ### Screen Shots
 
@@ -49,4 +50,4 @@
 - Twitter - [@_maxpark](https://twitter.com/_maxpark)
 - Website - [LinkedIn: Max Park](https://www.linkedin.com/in/itsmaxpark/)
 
-[Back To The Top](#BirthdayBuddy)
+[Back To The Top](#Git Followers)

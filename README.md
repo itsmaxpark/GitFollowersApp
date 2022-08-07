@@ -1,5 +1,5 @@
 
-#Git Followers 
+### GitFollowers 
 (from Sean Allen's Take Home Project)
 
 ### Screen Shots
